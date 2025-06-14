@@ -12,56 +12,74 @@ body {
 
 /* Barra superior */
 .top-bar {
-  background-color: var(--azul-oscuro);
+  background: linear-gradient(to right, #02397C, #0455A4); /* degradado sutil */
   color: white;
-  padding: 5px 20px;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9em;
+  font-size: 0.95em;
+  font-weight: 400;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra inferior ligera */
 }
 
 .top-bar .contacto {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .top-bar .contacto span {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: white;
+  gap: 6px;
   font-size: 0.95em;
+  opacity: 0.95;
 }
-
 
 .top-bar .redes {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
 .top-bar .redes a img {
   display: block;
-  filter: brightness(0) invert(1); /* Para íconos oscuros en fondo oscuro */
+  height: 20px;
+  width: 20px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.9;
 }
+
+.top-bar .redes a img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 
 /* Encabezado principal */
 .header-main {
-  background-color: white;
+  background-color: #d3ecf8; /* fondo celeste más claro y moderno */
   text-align: center;
-  padding: 30px 10px 10px;
+  padding: 60px 20px 40px;
   border-bottom: 3px solid var(--azul-claro);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05); /* línea sutil interna */
 }
 
 .header-main h1 {
-  color: var(--azul-oscuro);
-  font-size: 2em;
-  margin-bottom: 10px;
+  color: #02397C;
+  font-size: 2.8em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.04); /* sombra ligera de texto */
 }
 
 .header-main img {
-  max-width: 200px;
+  max-width: 280px;
   height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra para dar relieve */
+  transition: transform 0.3s ease;
 }
 
 .penafielcup-section {
@@ -107,7 +125,7 @@ body {
 }
 
 .participantes-section {
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 60px 20px;
   text-align: center;
 }
@@ -204,7 +222,7 @@ body {
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .fecha-texto p {
@@ -293,7 +311,7 @@ body {
   background-color: #02397C;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 10px;
 }
 
 .footer-content h3 {
