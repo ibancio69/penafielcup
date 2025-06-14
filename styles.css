@@ -26,6 +26,15 @@ body {
   gap: 20px;
 }
 
+.top-bar .contacto span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 0.95em;
+}
+
+
 .top-bar .redes {
   display: flex;
   gap: 15px;
@@ -211,12 +220,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 70px; /* Ajusta según tu contenido */
 }
+
 
 .foto-campo {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -262,9 +273,9 @@ body {
 .sponsor-box img {
   max-width: 80px;
   margin-bottom: 10px;
-  filter: grayscale(100%);
-  opacity: 0.9;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: none;
+  opacity: 1;
+  transition: transform 0.3s ease;
 }
 
 .sponsor-box:hover img {
@@ -317,4 +328,3 @@ body {
   margin-top: 20px;
   opacity: 0.8;
 }
-
